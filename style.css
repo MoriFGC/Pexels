@@ -42,6 +42,10 @@ nav {
 }
 
 /* Modifico le immaggini che escono */
+#album {
+    backdrop-filter: blur(5px);
+}
+
 .card img {
     object-fit: cover;
     aspect-ratio: 16 / 9;
@@ -50,4 +54,10 @@ nav {
 .card {
     background-color: transparent;
     backdrop-filter: blur(5px); /* Applica la sfocatura alla navbar */
+}
+
+.card p, span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

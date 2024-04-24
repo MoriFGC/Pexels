@@ -1,0 +1,53 @@
+body {
+    background-image: url(img-background/forest-road-trees-woods-sunset-autumn-forest-dawn-pathway-3840x2160-2507.jpg);
+    background-repeat: repeat;
+}
+
+/* Header */
+header {
+    height: 80px;
+}
+
+/* sidebar */
+.sidebar {
+    height: 100vh;
+    width: 10%;
+    border-right: 1px solid white;
+    position: fixed;
+}
+
+.logo {
+    font-size: 100px;
+}
+
+.seguici {
+    transform: rotate(-90deg);
+}
+/* Fine Sidebar */
+
+/* Inizio Nav */
+nav {
+    height: 80px;
+    width: 90%;
+    position: fixed;
+    right: 0;
+    border-bottom: 1px solid white;
+    backdrop-filter: blur(5px); /* Applica la sfocatura alla navbar */
+    z-index: 1001;
+}
+
+.lingue.dropdown-menu.show {
+    min-width: 30px;
+    background-color: transparent;
+}
+
+/* Modifico le immaggini che escono */
+.card img {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.card {
+    background-color: transparent;
+    backdrop-filter: blur(5px); /* Applica la sfocatura alla navbar */
+}

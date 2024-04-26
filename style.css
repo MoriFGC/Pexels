@@ -1,6 +1,7 @@
 body {
     background-image: url(img-background/forest-road-trees-woods-sunset-autumn-forest-dawn-pathway-3840x2160-2507.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Header */
@@ -52,12 +53,50 @@ nav {
 }
 
 .card {
-    background-color: transparent;
-    backdrop-filter: blur(5px); /* Applica la sfocatura alla navbar */
+    background-color: transparent; 
 }
 
 .card p, span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.bi-hand-thumbs-up-fill {
+    position: absolute;
+    left: -1.5px;
+    opacity: 0;
+    width: 32px;
+    height: 31px;
+}
+
+.bi-hand-thumbs-up-fill:hover {
+    opacity: 1;
+}
+
+
+.bi-bookmark-fill {
+    position: absolute;
+    left: -1.5px;
+    opacity: 0;
+    width: 32px;
+    height: 31px;
+}
+
+.bi-bookmark-fill:hover {
+    opacity: 1;
+}
+
+
+/* classe universale per effetto blur */
+.blur {
+    backdrop-filter: blur(5px); /* Applica la sfocatura a tutto */
+    background-color: transparent;
+}
+
+/* Form contatti */
+
+#Message {
+    height: 100px;
+    padding: 0;
 }

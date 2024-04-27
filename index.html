@@ -16,7 +16,7 @@
     <!-- Header -->
     <header class="d-flex ">
         <!-- Sidebar CON BG trasparente-->
-        <div class="sidebar d-flex flex-column justify-content-between  align-items-center py-5">
+        <div class="sidebar d-lg-flex flex-column justify-content-between  align-items-center py-5">
             <!-- logo -->
             <div class="logo">
                 <a href="index.html"><i class="bi bi-brilliance text-light"></a></i>
@@ -34,26 +34,39 @@
         </div>
         <!-- FINE Sidebar -->
         <!-- NavBar -->
-        <nav class="d-flex justify-content-between align-items-center">
-                <div class="dropdown">
-                    <a class="btn dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         IT
-                    </a>
-                  
-                    <ul class="lingue dropdown-menu">
-                      <li><a class="dropdown-item text-light " href="#">EN</a></li>
-                      <li><a class="dropdown-item text-light " href="#">FR</a></li>
-                      <li><a class="dropdown-item text-light " href="#">ES</a></li>
-                      <li><a class="dropdown-item text-light " href="#">DE</a></li>
-                    </ul>
-                  </div>
-            <div class="d-flex">
-                <ul class="list-unstyled my-0 d-flex gap-5 align-items-center me-5">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <div class="logo d-lg-none">
+              <a href="index.html"><i class="bi bi-brilliance text-light"></a></i>
+          </div>
+      
+            <!-- Hamburgher -->
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="text-light "><i class="bi bi-list"></i></span>
+            </button>
+
+            <div class="blur collapse navbar-collapse d-lg-flex justify-content-lg-between align-items-lg-center" id="navbarSupportedContent">
+
+              <div class="dropdown">
+                <a class="btn dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     IT
+                </a>
+              
+                <ul class="lingue dropdown-menu">
+                  <li><a class="dropdown-item text-light " href="#">EN</a></li>
+                  <li><a class="dropdown-item text-light " href="#">FR</a></li>
+                  <li><a class="dropdown-item text-light " href="#">ES</a></li>
+                  <li><a class="dropdown-item text-light " href="#">DE</a></li>
+                </ul>
+              </div>
+
+              <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                <ul class="list-unstyled my-0 d-flex flex-column flex-lg-row gap-5 align-items-start me-5">
                     <li><a href="" class="text-light text-decoration-none ">Home</a></li>
                     <li><a href="" class="text-light text-decoration-none ">Download</a></li>
                     <li><a href="" class="text-light text-decoration-none ">Favorites</a></li>
                     <li><a href=""><div class="dropdown">
-                        <a class="btn text-light text-bg-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn text-light text-bg-none dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Trending
                         </a>
                       
@@ -66,7 +79,7 @@
                     <li><a href="#Message" class="text-light text-decoration-none ">Contacts</a></li>
                 </ul>
                 
-                <div class="container-fluid">
+                <div class="container-fluid mt-2 -t-lg-0 px-0 ">
                   <form class="d-flex" role="search" onsubmit="event.preventDefault(); cercaFoto(this.querySelector('input').value)">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-danger" type="submit">Search</button>
@@ -78,7 +91,7 @@
     </header>
     
     <!-- Hero -->
-    <div class="container col-xxl-8 px-4 py-5 mt-5 blur rounded-5">
+    <div class="container col-8 px-4 py-5 mt-5 blur rounded-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src="img-hero/forest-nature-river-pine-trees-scenery-4k-wallpaper-uhdpaper.com-478@0@h.jpg" class="d-block mx-lg-auto img-fluid rounded-5" alt="lake-img" width="700" height="500" loading="lazy">
@@ -88,7 +101,7 @@
             <p class="lead text-light opacity-75">Explore a world where each image is a gateway to boundless inspiration. With our curated collection, unleash your creativity and immerse yourself in the beauty of visual storytelling.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Search</button>
-              <button type="button" class="btn btn-outline-light btn-lg px-4">Contacts</button>
+              <button type="button" class="btn btn-outline-danger btn-lg px-4">Contacts</button>
             </div>
           </div>
         </div>
@@ -97,42 +110,38 @@
     <!-- Main -->
     <main>
         <!-- sezione img -->
-        <section>
-            <div class="album py-5 bg-none">
-                <div class="container">
-                  <div id="album" class="row g-3 gap-3">
-                    
-                  </div>
+              <div class="container col-8">
+                <div id="album" class="row g-0 justify-content-between">
+                  
                 </div>
               </div>
-        </section>
         <!-- Contatti -->
-        <section class="container my-5 blur rounded-5 contatti">
+        <section class="container col-8 my-5 blur rounded-5 contatti">
           <!-- contattaci -->
           <div class="d-flex flex-column text-center text-light  ">
             <span class="fs-1 fw-bold ">Contacts</span>
             <span class="fs-3">HarmonyPics SRL</span>
           </div>
           <!-- Residenza dell'azienda -->
-          <div class="d-flex justify-content-evenly align-items-center mt-5">
+          <div class="d-flex flex-column flex-xl-row gap-2 gap-lg-0 justify-content-lg-evenly align-items-lg-center mt-5">
             <div class="d-flex align-items-center gap-2  ">
-              <i class="bi bi-geo-alt text-light fs-1"></i>
-              <div class="d-flex flex-column text-light fs-3">
+              <i class="bi bi-geo-alt text-light "></i>
+              <div class="d-flex flex-column text-light">
                 <span>123 Maple Street</span>
                 <span>Anytown, USA</span>
               </div>
             </div>
             <!-- Email dell'azienda -->
             <div class="d-flex align-items-center gap-2  ">
-              <i class="bi bi-envelope text-light fs-1"></i>
-              <div class="d-flex flex-column text-light fs-3">
+              <i class="bi bi-envelope text-light "></i>
+              <div class="d-flex flex-column text-light">
                 <span>HarmonyPics@harmony.com</span>
               </div>
             </div>
             <!-- Numero azienda -->
             <div class="d-flex align-items-center gap-2  ">
-              <i class="bi bi-telephone text-light fs-1"></i>
-              <div class=" text-light fs-3">
+              <i class="bi bi-telephone text-light "></i>
+              <div class=" text-light">
                 <span>(415) 555-6789</span>
               </div>
             </div>
@@ -187,7 +196,7 @@
 
     <!-- Footer -->
 
-    <div class="container blur text-light">
+    <div class="container blur text-light col-8">
       <footer class="py-5">
         <div class="row">
           <div class="col-6 col-md-2 mb-3">

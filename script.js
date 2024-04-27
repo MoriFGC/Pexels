@@ -6,7 +6,7 @@ const keyApi = '2RkicnUHCaJ6Jlhyd0tKt6fu6CLQj8nI8lhXYT0k3kIE0zuY1RuRpawg';
 
         chiamata.then((risposta) => risposta.json()).then((rispostaElaborata) => {
            document.getElementById('album').innerHTML = rispostaElaborata.photos.map((image) =>
-        `<div class="col-12 col-md-4 col-lg-3  blur">
+        `<div class="col-12 col-md-6 col-lg-3  blur">
                       <div class="card shadow-sm">
                         <img src="${image.src.large}">
                         <div class="card-body">
@@ -28,6 +28,6 @@ const keyApi = '2RkicnUHCaJ6Jlhyd0tKt6fu6CLQj8nI8lhXYT0k3kIE0zuY1RuRpawg';
                         </div>
                       </div>
                     </div>
-        `) 
+        `).join("")
         })  
     }
